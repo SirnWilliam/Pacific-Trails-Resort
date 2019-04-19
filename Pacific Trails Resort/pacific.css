@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Crimson+Text|Oxygen|Special+Elite|Varela+Round');
+
+* {
+	box-sizing: border-box;
+}
+
+header,
+main,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+artical {
+	display: block;
+}
+
+body {
+	background-color: #B8DBED;
+	color: black;
+	font-family: 'Varela Round', sans-serif;
+}
+
+#wrapper {
+	background-color: #90C7E3;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px 3px #333333;
+	border: 1px solid #000033;
+	background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+}
+
+header {
+	background-color: #000033;
+	color: #FFFFFF;
+	background-position: right;
+	background-repeat: no-repeat;
+	font-family: 'Special Elite', cursive;
+	height: 120px;
+	text-align: center;
+	padding-top: 30px;
+	padding-left: 3em;
+
+}
+
+nav {
+	width: 160px;
+	float: left;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 1.5em;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #5C7FA3;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #A52A2A;
+}
+
+nav ul {
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+main {
+	background: white;
+	margin-left: 190px;
+	padding: 1px 20px 20px 30px;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+footer {
+	font-family: 'Crimson Text', serif;
+}
+
+h1 {
+	font-size: 3em;
+	letter-spacing: 0.25em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+h2 {
+	color: mediumblue;
+	text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+h3 {
+	color: mediumblue;
+}
+
+main ul {
+	list-style-image: url(images/marker.gif);
+}
+
+dt {
+	color: deepskyblue;
+}
+
+footer {
+	font-size: 75%;
+	text-align: center;
+	font-style: italic;
+	padding: 20px;
+	background-color: white;
+	margin-left: 190px;
+}
+
+.resort {
+	color: mediumblue;
+	font-weight: bold;
+}
+
+#contact {
+	background-color: white;
+	font-size: 90%;
+}
+
+#homehero {
+	margin-left: 190px;
+	height: 300px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/coast2.jpg);
+}
+
+#yurthero {
+	height: 300px;
+	margin-left: 190px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/yurt.jpg);
+}
+
+#trailhero {
+	height: 300px;
+	margin-left: 190px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(images/trail.jpg);
+}
+
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+
+table {
+	border: 2px solid #3399CC;
+	border-collapse: collapse;
+}
+td, th {
+	padding: 0.5em;
+	border: 2px solid #3399CC;
+}
+
+td {
+	text-align: center;
+}
+.text {
+	text-align: left;
+}
+tr:nth-of-type(odd) {
+	background-color: #F5FAFC;
+}
+@media only screen and (max-width: 64em) {
+	body {
+		margin: 0;
+		background-color: #FFFFFF;
+	}
+
+	#wrapper {
+		min-width: 0;
+		width: auto;
+		box-shadow: none;
+		border: none;
+	}
+
+	header {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0;
+		height: auto;
+	}
+
+	h1 {
+		letter-spacing: 0.1em;
+	}
+
+	main {
+		margin-left: 0;
+	}
+
+	nav {
+		float: none;
+		width: auto;
+		text-align: center;
+		padding: 0.5em;
+	}
+
+	nav ul {
+		display: inline;
+		padding: 0.25em 0.75em 0.25em 0.75em;
+
+	}
+
+	#homehero,
+	#yurthero,
+	#trailhero {
+		margin-left: 0;
+		height: 200px;
+	}
+
+	footer {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 37.5em) {
+	main {
+		padding: 0.1em 1em 0.1em 1em;
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	nav ul {
+		display: block;
+		margin: 0;
+		border-bottom: 2px solid #330000;
+	}
+
+	nav a {
+		display: block;
+	}
+
+	#homehero,
+	#yurthero,
+	#trailhero {
+		background-image: none;
+		height: 0;
+	}
+
+	#mobile {
+		display: inline;
+	}
+
+	#desktop {
+		display: none;
+	}
+
+}
